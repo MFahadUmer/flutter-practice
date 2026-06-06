@@ -52,3 +52,31 @@ project from the book, with my own notes, experiments, and tweaks.
 - [Flutter Apprentice (Kodeco)](https://www.kodeco.com/books/flutter-apprentice)
 - [Flutter Docs](https://docs.flutter.dev)
 - [Dart Language Tour](https://dart.dev/language)
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Author1**
+
+- LinkedIn: [Muhammad Fahad](https://www.linkedin.com/in/muhammad-fahad-umer)
+- Github: [@MFahadUmer](https://github.com/MFahadUmer)
+- Twitter: [@engfahadumer](https://twitter.com/@engfahadumer)
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project please give it a star for motivation.
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
