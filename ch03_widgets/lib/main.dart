@@ -4,7 +4,6 @@ import 'package:ch03_widgets/constants.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  // 1
   runApp(const Yummy());
 }
 
@@ -34,13 +33,9 @@ class _YummyState extends State<Yummy> {
   @override
   Widget build(BuildContext context) {
     const appTitle = 'Yummy';
-
-    // TODO: Setup default theme
-
-    //3
     return MaterialApp(
       title: appTitle,
-      //debugShowCheckedModeBanner: false, // Uncomment to remove Debug banner
+      //debugShowCheckedModeBanner: false,
       themeMode: themeMode,
       theme: ThemeData(
         colorSchemeSeed: colorSelected.color,
@@ -52,10 +47,6 @@ class _YummyState extends State<Yummy> {
         useMaterial3: true,
         brightness: Brightness.dark,
       ),
-
-      // TODO: Apply Home widget
-
-      // 4
       home: Scaffold(
         appBar: AppBar(
           actions: [
