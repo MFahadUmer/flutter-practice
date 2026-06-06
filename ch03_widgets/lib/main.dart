@@ -1,3 +1,6 @@
+import 'package:ch03_widgets/components/color_button.dart';
+import 'package:ch03_widgets/components/theme_button.dart';
+import 'package:ch03_widgets/constants.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -5,13 +8,28 @@ void main() {
   runApp(const Yummy());
 }
 
-class Yummy extends StatelessWidget {
-  // TODO: Setup default theme
-
-  // 2
+class Yummy extends StatefulWidget {
   const Yummy({super.key});
 
-  // TODO: Add changeTheme above here
+  @override
+  State<Yummy> createState() => _YummyState();
+}
+
+class _YummyState extends State<Yummy> {
+  ThemeMode themeMode = ThemeMode.light;
+  ColorSelection colorSelected = ColorSelection.pink;
+
+  void changeTheme(bool useLightMode) {
+    setState(() {
+      themeMode = useLightMode ? ThemeMode.light : ThemeMode.dark;
+    });
+  }
+
+  void changeColor(int value) {
+    setState(() {
+      colorSelected = ColorSelection.values[value];
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -23,26 +41,32 @@ class Yummy extends StatelessWidget {
     return MaterialApp(
       title: appTitle,
       //debugShowCheckedModeBanner: false, // Uncomment to remove Debug banner
-
-      // TODO: Add theme
+      themeMode: themeMode,
+      theme: ThemeData(
+        colorSchemeSeed: colorSelected.color,
+        useMaterial3: true,
+        brightness: Brightness.light,
+      ),
+      darkTheme: ThemeData(
+        colorSchemeSeed: colorSelected.color,
+        useMaterial3: true,
+        brightness: Brightness.dark,
+      ),
 
       // TODO: Apply Home widget
 
       // 4
       home: Scaffold(
         appBar: AppBar(
-          // TODO: Add action buttons
+          actions: [
+            ThemeButton(changeTheme: changeTheme),
+            ColorButton(colorSelected: colorSelected, changeColor: changeColor),
+          ],
           elevation: 4.0,
-          title: const Text(
-            appTitle,
-            style: TextStyle(fontSize: 24.0),
-          ),
+          title: const Text(appTitle, style: TextStyle(fontSize: 24.0)),
         ),
         body: const Center(
-          child: Text(
-            'You Hungry?😋',
-            style: TextStyle(fontSize: 30.0),
-          ),
+          child: Text('You Hungry?😋', style: TextStyle(fontSize: 30.0)),
         ),
       ),
     );
