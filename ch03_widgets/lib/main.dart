@@ -1,6 +1,6 @@
-import 'package:ch03_widgets/components/color_button.dart';
-import 'package:ch03_widgets/components/theme_button.dart';
-import 'package:ch03_widgets/constants.dart';
+import '../components/color_button.dart';
+import '../components/theme_button.dart';
+import '../constants.dart';
 import 'package:flutter/material.dart';
 
 void main() {
