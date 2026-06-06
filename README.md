@@ -1,0 +1,54 @@
+# 📱 Flutter Apprentice Practice
+
+Practice projects and chapter exercises while working through
+**Flutter Apprentice, 4th Edition** (Kodeco).
+
+---
+
+## 📖 About
+
+This repo contains my hands-on work as I learn Flutter by following
+the Flutter Apprentice book. Each folder corresponds to a chapter or
+project from the book, with my own notes, experiments, and tweaks.
+
+**Book:** Flutter Apprentice 4th Edition — Kodeco  
+**Language:** Dart / Flutter  
+**Started:** June 2025
+
+---
+
+## 🗂️ Structure
+
+```
+/
+├── ch03_widgets/
+```
+
+---
+
+## 🚀 Running a Project
+
+1. Make sure Flutter is installed:
+   `flutter doctor`
+2. Navigate to a chapter folder:
+   `cd ch03_widgets`
+3. Install dependencies:
+   `flutter pub get`
+4. Run the app:
+   `flutter run`
+
+---
+
+## 📝 Notes
+
+- Code follows the book closely but may include personal experiments
+- Each chapter folder has a short `README.md` with my own takeaways
+- Built as part of a structured Flutter self-study plan
+
+---
+
+## 📚 Resources
+
+- [Flutter Apprentice (Kodeco)](https://www.kodeco.com/books/flutter-apprentice)
+- [Flutter Docs](https://docs.flutter.dev)
+- [Dart Language Tour](https://dart.dev/language)
