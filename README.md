@@ -13,7 +13,7 @@ project from the book, with my own notes, experiments, and tweaks.
 
 **Book:** Flutter Apprentice 4th Edition — Kodeco  
 **Language:** Dart / Flutter  
-**Started:** June 2025
+**Started:** June 2026
 
 ---
 
