@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yummy/components/category_card.dart';
+import 'package:yummy/components/post_card.dart';
+import 'package:yummy/components/restaurant_card.dart';
 import 'package:yummy/models/models.dart';
 import '../components/color_button.dart';
 import '../components/theme_button.dart';
@@ -47,10 +49,18 @@ class _HomeState extends State<Home> {
         child: CategoryCard(category: categories[0]),
       ),
     ),
-    // TODO: Replace with Post Card
-    Container(color: Colors.green),
-    // TODO: Replace with Restaurant Landscape Card
-    Container(color: Colors.blue)
+    Center(
+      child: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: PostCard(post: posts[0]),
+      ),
+    ),
+    Center(
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxHeight: 400),
+        child: RestaurantCard(restaurant: restaurants[0]),
+      ),
+    ),
   ];
 
   @override
